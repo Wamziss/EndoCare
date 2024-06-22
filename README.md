@@ -1,6 +1,6 @@
 # EndoCare
 
-EndoCare is a web application designed for individuals suffering from endometriosis, providing tools for appointment management, medication reminders, educational resources, and hospital recommendations.
+EndoCare is a web application designed for individuals suffering from endometriosis, providing tools for appointment management, medication reminders, educational resources, hospital recommendations and more.
 
 ## Getting Started
 
