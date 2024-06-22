@@ -25,5 +25,5 @@ npm install
 npm run dev
 
 # View the application
-Open your browser and go to http://localhost:3000.
+Follow the localhost link given after running `npm run dev`
 ```
