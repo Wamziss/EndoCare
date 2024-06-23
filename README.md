@@ -1,6 +1,6 @@
 # EndoCare
 
-EndoCare is a web application designed for individuals suffering from endometriosis, providing tools for appointment management, medication reminders, educational resources, and hospital recommendations.
+EndoCare is a web application designed for individuals suffering from endometriosis, providing tools for appointment management, medication reminders, educational resources, hospital recommendations and more.
 
 ## Getting Started
 
@@ -25,5 +25,5 @@ npm install
 npm run dev
 
 # View the application
-Open your browser and go to http://localhost:3000.
+Follow the localhost link given after running `npm run dev`
 ```
