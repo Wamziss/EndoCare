@@ -7,6 +7,7 @@ import Login from '../pages/Login'
 import SignUp from '../pages/SignUp'
 import Services from '../pages/Services'
 import Contact from '../pages/Contact'
+import Donations from '../pages/Donations'
 
 const Routers = () => {
   return (
@@ -18,6 +19,7 @@ const Routers = () => {
       <Route path='/register' element={<SignUp/>}/>
       <Route path='/contact' element={<Contact/>}/>
       <Route path='/services' element={<Services/>}/>
+      <Route path='/donations' element={<Donations/>}/>
     </Routes>
   )
 }

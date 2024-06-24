@@ -19,7 +19,7 @@ const Header = () => {
         <div className="flex items-center space-x-4">
           <a href="/login" className="text-gray-700 hover:text-primaryColor">Login</a>
           <a href="/register" className="text-gray-700 hover:text-primaryColor">Sign Up</a>
-          <button className="bg-primaryColor text-white px-4 py-2 rounded-md hover:bg-lightYellow">Donate</button>
+          <a href="/donations" className="bg-primaryColor text-white px-4 py-2 rounded-md hover:bg-lightYellow">Donate</a>
           <button className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
             <svg className="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d={isOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"}></path>
