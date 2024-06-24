@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import logo from '../../assets/images/logo.jpeg'
+import logo from '../../assets/images/logo4.jpeg'
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -8,7 +8,7 @@ const Header = () => {
     <header className="bg-white shadow-md">
       <div className="container mx-auto px-4 py-3 flex justify-between items-center">
         <div className="flex items-center">
-          <img src={logo} alt="EndoCare Logo" className="h-16" />
+          <img src={logo} alt="EndoCare Logo" className="h-20" />
           <nav className="hidden md:flex space-x-4 ml-10">
             <a href="/" className="text-gray-700 hover:text-primaryColor">Home</a>
             <a href="/about" className="text-gray-700 hover:text-primaryColor">About</a>
