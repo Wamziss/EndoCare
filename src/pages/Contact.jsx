@@ -28,7 +28,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact-us" className="bg-lightGray py-20">
+    <section id="contact-us" className="bg-softGray py-20">
       <div className="container mx-auto px-4 text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-primaryColor mb-12">Contact Us</h2>
         <form onSubmit={handleSubmit} className="max-w-lg mx-auto">
@@ -71,7 +71,7 @@ const Contact = () => {
               required
             />
           </div>
-          <button type="submit" className="bg-primaryColor text-white px-6 py-3 rounded-md hover:bg-lightYellow">
+          <button type="submit" className="bg-green text-white px-6 py-3 rounded-md hover:bg-primaryColor">
             Submit
           </button>
         </form>

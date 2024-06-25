@@ -14,7 +14,7 @@ const Donations = () => {
   };
 
   return (
-    <div className="min-h-screen bg-lightYellow flex items-center justify-center">
+    <div className="min-h-screen bg-lightGray flex items-center justify-center">
       <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
         <h2 className="text-3xl font-bold mb-6 text-center text-primaryColor">Donate</h2>
         <form onSubmit={handleSubmit}>
@@ -53,7 +53,7 @@ const Donations = () => {
           </div>
           <button
             type="submit"
-            className="w-full bg-primaryColor text-white py-2 rounded-lg hover:bg-lightYellow transition duration-200"
+            className="w-full bg-green text-white py-2 rounded-lg hover:bg-primaryColor transition duration-200"
           >
             Donate
           </button>

@@ -12,7 +12,7 @@ const Login = () => {
   };
 
   return (
-    <div className="min-h-screen bg-softGray flex items-center justify-center">
+    <div className="min-h-screen bg-lightGray flex items-center justify-center">
       <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
         <h2 className="text-3xl font-bold mb-6 text-center text-primaryColor">Login</h2>
         <form onSubmit={handleSubmit}>
@@ -40,13 +40,13 @@ const Login = () => {
           </div>
           <button
             type="submit"
-            className="w-full bg-primaryColor text-white py-2 rounded-lg hover:bg-lightYellow transition duration-200"
+            className="w-full bg-green text-white py-2 rounded-lg hover:bg-primaryColor transition duration-200"
           >
             Login
           </button>
         </form>
         <p className="mt-6 text-center text-gray-700">
-          Don't have an account? <a href="/register" className="text-primaryColor hover:text-lightYellow">Register</a>
+          Don't have an account? <a href="/register" className="text-primaryColor hover:underline"> Register</a>
         </p>
       </div>
     </div>

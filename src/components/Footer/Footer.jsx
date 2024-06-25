@@ -3,7 +3,7 @@ import { FaFacebookF, FaTwitter, FaInstagram } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <footer className="bg-primaryColor text-white py-8">
+    <footer className="bg-green text-white py-8">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
@@ -24,9 +24,9 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-bold mb-4">Follow Us</h3>
             <ul className="flex space-x-4">
-              <li><a href="#" className="text-green hover:text-lightYellow"><FaFacebookF /></a></li>
-              <li><a href="#" className="text-green hover:text-lightYellow"><FaTwitter /></a></li>
-              <li><a href="#" className="text-green hover:text-lightYellow"><FaInstagram /></a></li>
+              <li><a href="#" className="text-primaryColor hover:text-lightYellow"><FaFacebookF /></a></li>
+              <li><a href="#" className="text-primaryColor hover:text-lightYellow"><FaTwitter /></a></li>
+              <li><a href="#" className="text-primaryColor hover:text-lightYellow"><FaInstagram /></a></li>
             </ul>
           </div>
         </div>
