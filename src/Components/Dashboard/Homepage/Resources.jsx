@@ -32,11 +32,6 @@ function Resources() {
             <p>Small description about this resourc..</p>
             <span>View →</span>
           </div>
-          <div className="resourceCard">
-            <img src={image} alt="" />
-            <p>Small description about this resourc..</p>
-            <span>View →</span>
-          </div>
         </div>
       </div>
     </div>

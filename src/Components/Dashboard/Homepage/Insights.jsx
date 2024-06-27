@@ -28,14 +28,6 @@ function Insights() {
             <img src={insight1} alt="" width={100} />
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
           </div>
-          <div className="insightCard">
-            <img src={insight1} alt="" width={100}/>
-            <p>Lorem ipsum dolor sit amet.</p>
-          </div>
-          <div className="insightCard">
-            <img src={insight1} alt="" width={100} />
-            <p>Lorem ipsum dolor sit amet consectetur.</p>
-          </div>
         </div>
       </div>
     </div>

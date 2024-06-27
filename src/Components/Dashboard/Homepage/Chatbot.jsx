@@ -3,7 +3,7 @@ import chatbot from '../../../assets/chatbot.png'
 
 function Chatbot() {
   return (
-    <div>
+    <div className='chatbot'>
       <img src={chatbot} alt="" />
     </div>
   );

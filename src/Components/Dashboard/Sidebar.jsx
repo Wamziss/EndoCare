@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './Styles.css'
 
 function Sidebar() {
   return (
-    <div>
       <div className="sidebar">
           <div className="menuItems">
             <span>Discover</span>
@@ -76,7 +76,6 @@ function Sidebar() {
             </ul>
           </div>
         </div>
-    </div>
   );
 }
 
