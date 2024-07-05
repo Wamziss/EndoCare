@@ -1,4 +1,5 @@
 import React from 'react';
+import './Styles.css'
 import insight1 from '../../../assets/insight1.jpg'
 
 function Insights() {

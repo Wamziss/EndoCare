@@ -1,4 +1,6 @@
 import React from 'react';
+import './Styles.css'
+
 
 import image from '../../../assets/jogging.png';
 

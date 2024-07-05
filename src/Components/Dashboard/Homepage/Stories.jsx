@@ -1,4 +1,5 @@
 import React from 'react';
+import './Styles.css'
 
 import profile from '../../../assets/profile.jpg'
 function Stories() {

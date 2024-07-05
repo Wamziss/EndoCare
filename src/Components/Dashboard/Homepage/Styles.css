@@ -1,0 +1,408 @@
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f7f7f7; /* light gray background */
+    border-bottom: 1px solid #ddd; /* light gray border */
+  }
+  
+  .leftNav {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007bff; /* blue color */
+    margin-right: 20px;
+  }
+  
+  .menuBar {
+    cursor: pointer;
+  }
+  
+  .menuBar svg {
+    transition: fill 0.2s ease-in-out;
+  }
+  
+  .menuBar:hover svg {
+    fill: #007bff; /* blue color on hover */
+  }
+  
+  .middleNav {
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+  }
+  
+  .searchbar {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd; /* light gray border */
+    border-radius: 5px;
+    padding: 10px;
+    width: 200px;
+  }
+  
+  .searchbar input[type="search"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .searchIcon {
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  .searchIcon svg {
+    transition: fill 0.2s ease-in-out;
+  }
+  
+  .searchIcon:hover svg {
+    fill: #007bff; /* blue color on hover */
+  }
+  
+  .rightNav {
+    display: flex;
+    align-items: center;
+  }
+  
+  .rightNav img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .username {
+    font-size: 16px;
+    color: #333; /* dark gray color */
+  }
+  
+  /* Animations */
+  
+  .menuBar svg {
+    animation: pulse 2s infinite;
+  }
+  
+  .searchIcon svg {
+    animation: pulse 2s infinite;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  .MainContainer {
+    background-color: #F7F7F7; /* Light gray background */
+    padding: 20px;
+    font-family: Open Sans, sans-serif;
+  }
+  
+  .contentArea {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+  }
+  
+  .Sidebar {
+    background-color: #34A853; /* Hospital green */
+    width: 250px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .mainContent {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .leftContent {
+    width: 60%;
+    padding: 20px;
+  }
+  
+  .rightContent {
+    width: 40%;
+    padding: 20px;
+  }
+  
+  .Notifications {
+    background-color: #FFC107; /* Hospital yellow */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .notificationsCard {
+    padding: 20px;
+    background-color: #f7f7f7; /* light gray background */
+  }
+  
+  h3 {
+    color: #007bff; /* blue color */
+    margin-bottom: 10px;
+  }
+  
+  .notificationsList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .notificationsList li {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd; /* light gray border */
+  }
+  
+  .notificationsList li:hover {
+    background-color: #f0f0f0; /* light gray hover background */
+  }
+  
+  .notifIcon {
+    margin-right: 10px;
+  }
+  
+  .notifIcon svg {
+    width: 16px;
+    height: 16px;
+    fill: #007bff; /* blue color */
+  }
+  
+  .notifText {
+    font-size: 16px;
+    color: #333; /* dark gray color */
+  }
+  .Insights, .Resources, .Stories {
+    background-color: #FFFFFF; /* White background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .Chatbot {
+    background-color: #4CAF50; /* Hospital blue */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .insights {
+    padding: 20px;
+    background-color: #f7f7f7; /* light gray background */
+  }
+  
+  h3 {
+    color: #007bff; /* blue color */
+    margin-bottom: 10px;
+  }
+  
+  .insightChoices {
+    margin-bottom: 20px;
+  }
+  
+  .insightChoices ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .insightChoices li {
+    cursor: pointer;
+    padding: 10px;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.2s ease-in-out;
+  }
+  
+  .insightChoices li:hover {
+    border-bottom: 2px solid #007bff; /* blue color on hover */
+  }
+  
+  .insightChoices li.active {
+    border-bottom: 2px solid #007bff; /* blue color on active */
+  }
+  
+  .insightCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .insightCard {
+    margin: 20px;
+    width: 250px;
+    background-color: #fff; /* white background */
+    border: 1px solid #ddd; /* light gray border */
+    border-radius: 10px;
+    padding: 20px;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease-in-out;
+  }
+  
+  .insightCard:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .insightCard img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .insightCard p {
+    font-size: 16px;
+    color: #333; /* dark gray color */
+    margin-bottom: 20px;
+  }
+  .resources {
+    padding: 20px;
+    background-color: #f7f7f7; /* light gray background */
+  }
+  
+  h3 {
+    color: #007bff; /* blue color */
+    margin-bottom: 10px;
+  }
+  
+  .resourceChoices {
+    margin-bottom: 20px;
+  }
+  
+  .resourceChoices ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .resourceChoices li {
+    cursor: pointer;
+    padding: 10px;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.2s ease-in-out;
+  }
+  
+  .resourceChoices li:hover {
+    border-bottom: 2px solid #007bff; /* blue color on hover */
+  }
+  
+  .resourceChoices li.active {
+    border-bottom: 2px solid #007bff; /* blue color on active */
+  }
+  
+  .resourceCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .resourceCard {
+    margin: 20px;
+    width: 250px;
+    background-color: #fff; /* white background */
+    border: 1px solid #ddd; /* light gray border */
+    border-radius: 10px;
+    padding: 20px;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease-in-out;
+  }
+  
+  .resourceCard:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .resourceCard img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .resourceCard p {
+    font-size: 16px;
+    color: #333; /* dark gray color */
+    margin-bottom: 20px;
+  }
+  
+  .resourceCard span {
+    font-size: 14px;
+    color: #007bff; /* blue color */
+    cursor: pointer;
+  }
+  
+  .resourceCard span:hover {
+    text-decoration: underline;
+  }
+  .stories {
+    padding: 20px;
+    background-color: #f7f7f7; /* light gray background */
+  }
+  
+  h3 {
+    color: #007bff; /* blue color */
+    margin-bottom: 10px;
+  }
+  
+  .storyCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .storyCard {
+    margin: 20px;
+    width: 250px;
+    background-color: #fff; /* white background */
+    border: 1px solid #ddd; /* light gray border */
+    border-radius: 10px;
+    padding: 20px;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease-in-out;
+  }
+  
+  .storyCard:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .storyCard img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .storyCard p {
+    font-size: 16px;
+    color: #333; /* dark gray color */
+    margin-bottom: 20px;
+  }
+  
+  .storyCard span {
+    font-size: 14px;
+    color: #007bff; /* blue color */
+    cursor: pointer;
+  }
+  
+  .storyCard span:hover {
+    text-decoration: underline;
+  }
