@@ -1,15 +1,4 @@
-.mainContent {
-    display: flex;
-    flex-direction: row;
-    padding: 20px;
-  }
-  
-  Sidebar {
-    width: 250px;
-    background-color: #f7f7f7; /* light gray background */
-    padding: 20px;
-    border-right: 1px solid #ddd; /* light gray border */
-  }
+
   
   .mainArea {
     flex: 1;
