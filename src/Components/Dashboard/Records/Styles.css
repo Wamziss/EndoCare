@@ -1,0 +1,233 @@
+.mainContent {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+  }
+  
+  Sidebar {
+    width: 250px;
+    background-color: #f7f7f7; /* light gray background */
+    padding: 20px;
+    border-right: 1px solid #ddd; /* light gray border */
+  }
+  
+  .mainArea {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .leftContent {
+    width: 60%;
+    padding: 20px;
+  }
+  
+  .rightContent {
+    width: 40%;
+    padding: 20px;
+  }
+  
+  PeriodTracker, Medication, Appointments {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff; /* white background */
+    border: 1px solid #ddd; /* light gray border */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  PeriodTracker h2, Medication h2, Appointments h2 {
+    margin-top: 0;
+    color: #007bff; /* blue color */
+  }
+  
+  PeriodTracker p, Medication p, Appointments p {
+    font-size: 16px;
+    color: #333; /* dark gray color */
+  }
+  .calendarCard {
+    background-color: #fff; /* white background */
+    border: 1px solid #ddd; /* light gray border */
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .calendarCard h3 {
+    color: #007bff; /* blue color */
+    margin-top: 0;
+  }
+  
+  .calendarCard p {
+    font-size: 16px;
+    color: #333; /* dark gray color */
+    margin-bottom: 10px;
+  }
+  
+  .react-calendar {
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+  }
+  
+  .react-calendar__tile {
+    background-color: #fff; /* white background */
+    border: 1px solid #ddd; /* light gray border */
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .react-calendar__tile:hover {
+    background-color: #f7f7f7; /* light gray background */
+  }
+  
+  .react-calendar__tile--active {
+    background-color: #007bff; /* blue color */
+    color: #fff; /* white color */
+  }
+  
+  .react-calendar__navigation {
+    background-color: #fff; /* white background */
+    border: none;
+    padding: 10px;
+  }
+  
+  .react-calendar__navigation button {
+    background-color: #fff; /* white background */
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .react-calendar__navigation button:hover {
+    background-color: #f7f7f7; /* light gray background */
+  }
+  .addMedBtn {
+    background-color: #007bff; /* blue color */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .addMedBtn:hover {
+    background-color: #0069d9; /* darker blue color */
+  }
+  
+  .addMedBtn svg {
+    margin-right: 10px;
+  }
+  
+  .medicationList {
+    margin-top: 20px;
+  }
+  
+  .medicationList ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .medicationList li {
+    padding: 20px;
+    border-bottom: 1px solid #ddd; /* light gray border */
+  }
+  
+  .medicationList li:last-child {
+    border-bottom: none;
+  }
+  
+  .medName {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .timeSpan {
+    font-size: 14px;
+    color: #666; /* dark gray color */
+  }
+  
+  .timelimits {
+    font-size: 14px;
+    color: #333; /* dark gray color */
+  }
+  
+  .timelimits span {
+    margin-right: 20px;
+  }
+  .addAppointment {
+    background-color: #007bff; /* blue color */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .addAppointment:hover {
+    background-color: #0069d9; /* darker blue color */
+  }
+  
+  .addAppointment svg {
+    margin-right: 10px;
+  }
+  
+  .appointmentList {
+    margin-top: 20px;
+  }
+  
+  .appointmentList ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .appointmentList li {
+    padding: 20px;
+    border-bottom: 1px solid #ddd; /* light gray border */
+  }
+  
+  .appointmentList li:last-child {
+    border-bottom: none;
+  }
+  
+  .appointmentInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .appointmentName {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .hospital {
+    font-size: 14px;
+    color: #666; /* dark gray color */
+  }
+  
+  .timeDate {
+    font-size: 14px;
+    color: #333; /* dark gray color */
+  }
+  
+  .timeDate span {
+    margin-right: 20px;
+  }
+  
+  .appointmentStatus {
+    font-size: 14px;
+    color: #666; /* dark gray color */
+  }
+  
+  .appointmentStatus span {
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: #ffcc00; /* yellow color */
+  }
