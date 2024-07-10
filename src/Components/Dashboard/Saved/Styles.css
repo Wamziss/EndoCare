@@ -1,0 +1,28 @@
+.dietCard, .exerciseCard, .resourceCard {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  .card-img-top {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .dietCard .card-body, .exerciseCard .card-body, .resourceCard .card-body {
+    padding: 10px;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    border: none;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  

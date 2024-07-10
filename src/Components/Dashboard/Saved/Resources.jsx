@@ -1,40 +1,92 @@
 import React from 'react';
-
-import image from '../../../assets/insight1.jpg'
+import image from '../../../assets/insight1.jpg';
 
 function Resources() {
+  const resourceStyle = {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    padding: '20px',
+    backgroundColor: '#f8f9fa',
+    borderRadius: '8px',
+    fontFamily: 'DM Sans',
+    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+    width:'400px'
+  };
+
+  const titleStyle = {
+    fontFamily: 'El Messiri',
+    fontSize: '24px',
+    marginBottom: '20px'
+  };
+
+  const choiceStyle = {
+    display: 'flex',
+    justifyContent: 'center',
+    gap: '20px',
+    marginBottom: '20px'
+  };
+
+  const cardStyle = {
+    width: '200px',
+    padding: '40px 40px',
+    backgroundColor: '#f5f5dc',
+    borderRadius: '8px',
+    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+    textAlign: 'center',
+    marginBottom: '20px'
+  };
+
+  const textStyle = {
+    fontFamily: 'DM Sans',
+    fontSize: '14px'
+  };
+
+  const buttonStyle = {
+    display: 'inline-block',
+    marginTop: '10px',
+    padding: '8px 16px',
+    backgroundColor: '#007bff',
+    color: '#fff',
+    borderRadius: '4px',
+    cursor: 'pointer',
+    textDecoration: 'none',
+    fontFamily: 'Roboto',
+    fontSize: '14px'
+  };
+
   return (
-    <div>
-      <h3>Resources</h3>
-      <div className="resourceChoices">
-        <ul>
+    <div style={resourceStyle}>
+      <h3 style={titleStyle}>Resources</h3>
+      <div style={choiceStyle}>
+        <ul style={{ display: 'flex', gap: '10px', listStyleType: 'none', padding: 0 }}>
           <li>All</li>
-          <li>Recommended</li>
-          <li>Books</li>
-          <li>Blogs</li>
-          <li>Articles</li>
         </ul>
       </div>
-      <div className="resourceCards">
-        <div className="resourceCard">
-          <img src={image} alt="" width={100}/>
-          <p>Small description about this resourc..</p>
-          <span>View →</span>
+      <div>
+      <li>Recommended</li>
+        <div style={cardStyle}>
+          <img src={image} alt="Resource" width={100} />
+          <p style={textStyle}>Small description about this resource..</p>
+          <span style={buttonStyle}>View →</span>
         </div>
-        <div className="resourceCard">
-          <img src={image} alt="" width={100}/>
-          <p>Small description about this resourc..</p>
-          <span>View →</span>
+        <li>Books</li>
+        <div style={cardStyle}>
+          <img src={image} alt="Resource" width={100} />
+          <p style={textStyle}>Small description about this resource..</p>
+          <span style={buttonStyle}>View →</span>
         </div>
-        <div className="resourceCard">
-          <img src={image} alt="" width={100}/>
-          <p>Small description about this resourc..</p>
-          <span>View →</span>
+        <li>Blogs</li>
+        <div style={cardStyle}>
+          <img src={image} alt="Resource" width={100} />
+          <p style={textStyle}>Small description about this resource..</p>
+          <span style={buttonStyle}>View →</span>
         </div>
-        <div className="resourceCard">
-          <img src={image} alt="" width={100}/>
-          <p>Small description about this resourc..</p>
-          <span>View →</span>
+        <li>Articles</li>
+        <div style={cardStyle}>
+          <img src={image} alt="Resource" width={100} />
+          <p style={textStyle}>Small description about this resource..</p>
+          <span style={buttonStyle}>View →</span>
         </div>
       </div>
     </div>
