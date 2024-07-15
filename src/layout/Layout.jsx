@@ -2,16 +2,16 @@ import React from 'react'
 
 import Header from '../components/Header/Header'
 import Routers from '../routes/Routers'
-import Footer from '../components/Footer/Footer'
+import Footer from '../components/Footer/Footer'it sta
 
 const Layout = () => {
   return (
     <>
-      <Header />
+      <Header/>
       <main className='flex-grow'>
         <Routers />
       </main>
-      <Footer />
+      <Footer/>
     </>
   )
 }
