@@ -5,13 +5,15 @@ import Diet from './Saved/Diet';
 import Exercises from './Saved/Exercises';
 import Resources from './Saved/Resources';
 
+import './Styles.css'
+
 function Saved() {
   return (
     <div>
       <Navigation/>
-      <div className="mainContent">
+      <div className="contentArea">
         <Sidebar/>
-        <div className="mainArea">
+        <div className="mainContent">
           <Diet/>
           <Exercises/>
           <Resources/>

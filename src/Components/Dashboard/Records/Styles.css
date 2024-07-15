@@ -1,94 +1,63 @@
+.periodTracker{
+  margin: 20px 40px;
+}
+  
+.calendarCard{
+  background-color: #fff;
+  padding:10px 20px;
+  border-radius: 20px;
+}
+.calendarCard p{
+  color: #333;
+  padding: 5px 25px;
+  border: 1px solid #fff7cc;
+  box-shadow: 0 0 3px #ffdd00;
+  width: 90%;
+  margin: auto;
+}
+.myCalendar{
+  width: 90%;
+  margin: auto;
+  border-radius: 20px;
+}
 
-  
-  .mainArea {
-    flex: 1;
-    padding: 20px;
-    display: flex;
-    flex-direction: row;
-  }
-  
-  .leftContent {
-    width: 60%;
-    padding: 20px;
-  }
-  
-  .rightContent {
-    width: 40%;
-    padding: 20px;
-  }
-  
-  PeriodTracker, Medication, Appointments {
-    margin-bottom: 20px;
-    padding: 20px;
-    background-color: #fff; /* white background */
-    border: 1px solid #ddd; /* light gray border */
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  PeriodTracker h2, Medication h2, Appointments h2 {
-    margin-top: 0;
-    color: #007bff; /* blue color */
-  }
-  
-  PeriodTracker p, Medication p, Appointments p {
-    font-size: 16px;
-    color: #333; /* dark gray color */
-  }
-  .calendarCard {
-    background-color: #fff; /* white background */
-    border: 1px solid #ddd; /* light gray border */
-    border-radius: 10px;
-    padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .calendarCard h3 {
-    color: #007bff; /* blue color */
-    margin-top: 0;
-  }
-  
-  .calendarCard p {
-    font-size: 16px;
-    color: #333; /* dark gray color */
-    margin-bottom: 10px;
-  }
-  
-  .react-calendar {
-    border: none;
-    border-radius: 10px;
-    padding: 10px;
-    width: 100%;
-  }
+.react-calendar {
+  width: 100%;
+  margin: 10px auto;
+  border-radius: 20px;
+  padding: 20px;
+  background-color: #fff7cc;
+  border: none;
+  box-shadow: 0 0 3px #ffdd00;
+}
   
   .react-calendar__tile {
-    background-color: #fff; /* white background */
-    border: 1px solid #ddd; /* light gray border */
+    background-color: #fff7cc; 
+    /* border: 1px solid #ddd; */
     border-radius: 50%;
     padding: 10px;
     cursor: pointer;
   }
   
   .react-calendar__tile:hover {
-    background-color: #f7f7f7; /* light gray background */
+    background-color: #f7f7f7; 
   }
   
   .react-calendar__tile--active {
-    background-color: #007bff; /* blue color */
-    color: #fff; /* white color */
+    background-color: #ffdd00;
+    color: #000;
   }
   
   .react-calendar__navigation {
-    background-color: #fff; /* white background */
+    background-color: #fff7cc; /* white background */
     border: none;
     padding: 10px;
+    border-radius: 5px;
   }
   
   .react-calendar__navigation button {
-    background-color: #fff; /* white background */
+    background-color: #fff7cc; /* white background */
     border: none;
-    padding: 10px;
     cursor: pointer;
   }
   
@@ -96,15 +65,22 @@
     background-color: #f7f7f7; /* light gray background */
   }
   .addMedBtn {
-    background-color: #007bff; /* blue color */
-    border: none;
+    background-color: #fff7cca6; 
+    border: 2px solid #ffdd00;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
+    display: flex;
+    margin: 10px auto;
+    padding: 7px;
+    width: 30%;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
   }
   
   .addMedBtn:hover {
-    background-color: #0069d9; /* darker blue color */
+    background-color: #ffdd00; 
   }
   
   .addMedBtn svg {
@@ -113,6 +89,8 @@
   
   .medicationList {
     margin-top: 20px;
+    width: 90%;
+    margin: auto;
   }
   
   .medicationList ul {
@@ -134,6 +112,9 @@
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
   
   .timeSpan {
@@ -149,16 +130,28 @@
   .timelimits span {
     margin-right: 20px;
   }
+
+  /* Appointments */
   .addAppointment {
-    background-color: #007bff; /* blue color */
-    border: none;
+    background-color: #f5f5f5; 
+    border: 2px solid #ffdd00;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
+    display: flex;
+    margin: 10px auto;
+    padding: 7px;
+    width: 50%;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+  }
+  .addAppointment span{
+    font-weight: bold;
   }
   
   .addAppointment:hover {
-    background-color: #0069d9; /* darker blue color */
+    background-color: #ffdd00; 
   }
   
   .addAppointment svg {
@@ -177,7 +170,10 @@
   
   .appointmentList li {
     padding: 20px;
-    border-bottom: 1px solid #ddd; /* light gray border */
+    border-bottom: 1px solid #ddd; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
   
   .appointmentList li:last-child {
@@ -191,9 +187,10 @@
   }
   
   .appointmentName {
-    font-size: 18px;
+    font-size: 17px;
     font-weight: bold;
     margin-bottom: 10px;
+    color: #333;
   }
   
   .hospital {
@@ -218,5 +215,5 @@
   .appointmentStatus span {
     padding: 5px 10px;
     border-radius: 10px;
-    background-color: #ffcc00; /* yellow color */
+    background-color: lightgray;
   }

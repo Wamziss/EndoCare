@@ -4,13 +4,15 @@ import Sidebar from './Sidebar';
 import Forum from './Community/Forum';
 import Hospitals from './Community/Hospitals';
 
+import './Styles.css'
+
 function Community() {
   return (
     <div>
       <Navigation/>
-      <div className="mainContent">
+      <div className="contentArea">
         <Sidebar/>
-        <div className="mainArea">
+        <div className="mainContent">
           <Forum/>
           <Hospitals/>
         </div>

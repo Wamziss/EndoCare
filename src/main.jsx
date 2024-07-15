@@ -9,6 +9,7 @@ import Records from './Components/Dashboard/Records.jsx';
 import Health from './Components/Dashboard/Health.jsx';
 import Community from './Components/Dashboard/Community.jsx';
 import Saved from './Components/Dashboard/Saved.jsx';
+import Settings from './Components/Dashboard/Settings.jsx';
 
 const router = createBrowserRouter([
   {
@@ -34,6 +35,10 @@ const router = createBrowserRouter([
   {
     path: '/saved',
     element: <Saved />
+  },
+  {
+    path: '/settings',
+    element: <Settings />
   }
 ])
 
