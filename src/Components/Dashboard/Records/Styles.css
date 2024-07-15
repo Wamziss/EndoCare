@@ -65,7 +65,7 @@
     background-color: #f7f7f7; /* light gray background */
   }
   .addMedBtn {
-    background-color: #fff7cca6; 
+    background-color: #fff7cc; 
     border: 2px solid #ffdd00;
     padding: 10px 20px;
     font-size: 16px;
@@ -133,7 +133,7 @@
 
   /* Appointments */
   .addAppointment {
-    background-color: #f5f5f5; 
+    background-color: #fff7cc; 
     border: 2px solid #ffdd00;
     padding: 10px 20px;
     font-size: 16px;
