@@ -1,259 +1,273 @@
+.notificationsCard {
+  padding: 20px;
+  background-color: #fff7cc; /* Lightyellow background */
+}
 
-  
-  .notificationsCard {
-    padding: 20px;
-    background-color: #f7f7f7; /* light gray background */
-  }
-  
-  h3 {
-    color: #007bff; /* blue color */
-    margin-bottom: 10px;
-  }
-  
-  .notificationsList {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .notificationsList li {
-    margin-bottom: 20px;
-    padding: 10px;
-    border-bottom: 1px solid #ddd; /* light gray border */
-  }
-  
-  .notificationsList li:hover {
-    background-color: #f0f0f0; /* light gray hover background */
-  }
-  
-  .notifIcon {
-    margin-right: 10px;
-  }
-  
-  .notifIcon svg {
-    width: 16px;
-    height: 16px;
-    fill: #007bff; /* blue color */
-  }
-  
-  .notifText {
-    font-size: 16px;
-    color: #333; /* dark gray color */
-  }
-  .Insights, .Resources, .Stories {
-    background-color: #FFFFFF; /* White background */
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-  }
-  
-  .Chatbot {
-    background-color: #4CAF50; /* Hospital blue */
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  .insights {
-    padding: 20px;
-    background-color: #f7f7f7; /* light gray background */
-  }
-  
-  h3 {
-    color: #007bff; /* blue color */
-    margin-bottom: 10px;
-  }
-  
-  .insightChoices {
-    margin-bottom: 20px;
-  }
-  
-  .insightChoices ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .insightChoices li {
-    cursor: pointer;
-    padding: 10px;
-    border-bottom: 2px solid transparent;
-    transition: border-color 0.2s ease-in-out;
-  }
-  
-  .insightChoices li:hover {
-    border-bottom: 2px solid #007bff; /* blue color on hover */
-  }
-  
-  .insightChoices li.active {
-    border-bottom: 2px solid #007bff; /* blue color on active */
-  }
-  
-  .insightCards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  .insightCard {
-    margin: 20px;
-    width: 250px;
-    background-color: #fff; /* white background */
-    border: 1px solid #ddd; /* light gray border */
-    border-radius: 10px;
-    padding: 20px;
-    cursor: pointer;
-    transition: box-shadow 0.2s ease-in-out;
-  }
-  
-  .insightCard:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .insightCard img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin-bottom: 10px;
-  }
-  
-  .insightCard p {
-    font-size: 16px;
-    color: #333; /* dark gray color */
-    margin-bottom: 20px;
-  }
-  .resources {
-    padding: 20px;
-    background-color: #f7f7f7; /* light gray background */
-  }
-  
-  h3 {
-    color: #007bff; /* blue color */
-    margin-bottom: 10px;
-  }
-  
-  .resourceChoices {
-    margin-bottom: 20px;
-  }
-  
-  .resourceChoices ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .resourceChoices li {
-    cursor: pointer;
-    padding: 10px;
-    border-bottom: 2px solid transparent;
-    transition: border-color 0.2s ease-in-out;
-  }
-  
-  .resourceChoices li:hover {
-    border-bottom: 2px solid #007bff; /* blue color on hover */
-  }
-  
-  .resourceChoices li.active {
-    border-bottom: 2px solid #007bff; /* blue color on active */
-  }
-  
-  .resourceCards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  .resourceCard {
-    margin: 20px;
-    width: 250px;
-    background-color: #fff; /* white background */
-    border: 1px solid #ddd; /* light gray border */
-    border-radius: 10px;
-    padding: 20px;
-    cursor: pointer;
-    transition: box-shadow 0.2s ease-in-out;
-  }
-  
-  .resourceCard:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .resourceCard img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin-bottom: 10px;
-  }
-  
-  .resourceCard p {
-    font-size: 16px;
-    color: #333; /* dark gray color */
-    margin-bottom: 20px;
-  }
-  
-  .resourceCard span {
-    font-size: 14px;
-    color: #007bff; /* blue color */
-    cursor: pointer;
-  }
-  
-  .resourceCard span:hover {
-    text-decoration: underline;
-  }
-  .stories {
-    padding: 20px;
-    background-color: #f7f7f7; /* light gray background */
-  }
-  
-  h3 {
-    color: #007bff; /* blue color */
-    margin-bottom: 10px;
-  }
-  
-  .storyCards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  .storyCard {
-    margin: 20px;
-    width: 250px;
-    background-color: #fff; /* white background */
-    border: 1px solid #ddd; /* light gray border */
-    border-radius: 10px;
-    padding: 20px;
-    cursor: pointer;
-    transition: box-shadow 0.2s ease-in-out;
-  }
-  
-  .storyCard:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .storyCard img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin-bottom: 10px;
-  }
-  
-  .storyCard p {
-    font-size: 16px;
-    color: #333; /* dark gray color */
-    margin-bottom: 20px;
-  }
-  
-  .storyCard span {
-    font-size: 14px;
-    color: #007bff; /* blue color */
-    cursor: pointer;
-  }
-  
-  .storyCard span:hover {
-    text-decoration: underline;
-  }
+h3 {
+  color: #32cd32; /* Green color */
+  margin-bottom: 10px;
+  font-family: Poppins;
+  font-size: 28px;
+}
+
+.notificationsList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.notificationsList li {
+  margin-bottom: 20px;
+  padding: 10px;
+  border-bottom: 1px solid #e0ffe0; /* Lightgreen border */
+}
+
+.notificationsList li:hover {
+  background-color: #fff7cc; /* Lightyellow hover background */
+}
+
+.notifIcon {
+  margin-right: 10px;
+}
+
+.notifIcon svg {
+  width: 16px;
+  height: 16px;
+  fill: #32cd32; /* Green color */
+}
+
+.notifText {
+  font-size: 16px;
+  color: #333; /* dark gray color */
+  font-family: Open Sans;
+}
+
+.Insights,.Resources,.Stories {
+  background-color: #ffffff; /* White background */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.Chatbot {
+  background-color: #ffdd00; /* Yellow background */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.insights {
+  padding: 20px;
+  background-color: #fff7cc; /* Lightyellow background */
+}
+
+h3 {
+  color: #32cd32; /* Green color */
+  margin-bottom: 10px;
+  font-family: Poppins;
+  font-size: 28px;
+}
+
+.insightChoices {
+  margin-bottom: 20px;
+}
+
+.insightChoices ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.insightChoices li {
+  cursor: pointer;
+  padding: 10px;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.insightChoices li:hover {
+  border-bottom: 2px solid #32cd32; /* Green color on hover */
+}
+
+.insightChoices li.active {
+  border-bottom: 2px solid #32cd32; /* Green color on active */
+}
+
+.insightCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.insightCard {
+  margin: 20px;
+  width: 250px;
+  background-color: #fff; /* White background */
+  border: 1px solid #e0ffe0; /* Lightgreen border */
+  border-radius: 10px;
+  padding: 20px;
+  cursor: pointer;
+  transition: box-shadow 0.2s ease-in-out;
+  font-family: Open Sans;
+}
+
+.insightCard:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.insightCard img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.insightCard p {
+  font-size: 16px;
+  color: #333; /* dark gray color */
+  margin-bottom: 20px;
+}
+
+.resources {
+  padding: 20px;
+  background-color: #fff7cc; /* Lightyellow background */
+}
+
+h3 {
+  color: #32cd32; /* Green color */
+  margin-bottom: 10px;
+  font-family: Poppins;
+  font-size: 28px;
+}
+
+.resourceChoices {
+  margin-bottom: 20px;
+}
+
+.resourceChoices ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.resourceChoices li {
+  cursor: pointer;
+  padding: 10px;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.resourceChoices li:hover {
+  border-bottom: 2px solid #32cd32; /* Green color on hover */
+}
+
+.resourceChoices li.active {
+  border-bottom: 2px solid #32cd32; /* Green color on active */
+}
+
+.resourceCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.resourceCard {
+  margin: 20px;
+  width: 250px;
+  background-color: #ffffff; /* White background */
+  border: 1px solid #e0ffe0; /* Lightgreen border */
+  border-radius: 10px;
+  padding: 20px;
+  cursor: pointer;
+  transition: box-shadow 0.2s ease-in-out;
+  font-family: Open Sans;
+}
+
+.resourceCard:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.resourceCard img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.resourceCard p {
+  font-size: 16px;
+  color: #333; /* dark gray color */
+  margin-bottom: 20px;
+}
+
+.resourceCard span {
+  font-size: 14px;
+  color: #32cd32; /* Green color */
+  cursor: pointer;
+}
+
+.resourceCard span:hover {
+  text-decoration: underline;
+}
+
+.stories {
+  padding: 20px;
+  background-color: #fff7cc; /* Lightyellow background */
+}
+
+h3 {
+  color: #32cd32; /* Green color */
+  margin-bottom: 10px;
+  font-family: Poppins;
+  font-size: 28px;
+}
+
+.storyCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.storyCard {
+  margin: 20px;
+  width: 250px;
+  background-color: #ffffff; /* White background */
+  border: 1px solid #e0ffe0; /* Lightgreen border */
+  border-radius: 10px;
+  padding: 20px;
+  cursor: pointer;
+  transition: box-shadow 0.2s ease-in-out;
+  font-family: Open Sans;
+}
+
+.storyCard:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.storyCard img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.storyCard p {
+  font-size: 16px;
+  color: #333; /* dark gray color */
+  margin-bottom: 20px;
+}
+
+.storyCard span {
+  font-size: 14px;
+  color: #32cd32; /* Green color */
+  cursor: pointer;
+}
+
+.storyCard span:hover {
+  text-decoration: underline;
+}
