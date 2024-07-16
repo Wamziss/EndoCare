@@ -2,12 +2,18 @@
   
   .notificationsCard {
     padding: 20px;
-    background-color: #f7f7f7; /* light gray background */
+    background-color: #fff7cc; 
+    border: .001em solid #ffdd00;
+    border-radius: 15px;
+    margin-top: 20px;
   }
   
-  h3 {
-    color: #007bff; /* blue color */
+  .notifHeader{
+    color: #333;
+    font-size: 17px;
     margin-bottom: 10px;
+    text-align: center;
+    font-weight: bold;
   }
   
   .notificationsList {
@@ -19,11 +25,14 @@
   .notificationsList li {
     margin-bottom: 20px;
     padding: 10px;
-    border-bottom: 1px solid #ddd; /* light gray border */
+    border-bottom: 1px solid #ddd; 
+    display: flex;
+    align-items: center;
   }
   
   .notificationsList li:hover {
-    background-color: #f0f0f0; /* light gray hover background */
+    background-color: #fff7cc; 
+    border-radius: 10px;/* light gray hover background */
   }
   
   .notifIcon {
@@ -33,39 +42,35 @@
   .notifIcon svg {
     width: 16px;
     height: 16px;
-    fill: #007bff; /* blue color */
+    fill: gray;
   }
   
   .notifText {
-    font-size: 16px;
+    font-size: 15px;
     color: #333; /* dark gray color */
-  }
-  .Insights, .Resources, .Stories {
-    background-color: #FFFFFF; /* White background */
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
   }
   
   .Chatbot {
-    background-color: #4CAF50; /* Hospital blue */
+    background-color: #4CAF50; 
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
-  .insights {
-    padding: 20px;
-    background-color: #f7f7f7; /* light gray background */
+  .subHeader{
+    color: #000;
+    font-size: 20px;
+    margin: 20px auto 10px auto;
+    text-align: center;
+    font-weight: bold;
+    max-width: fit-content;
   }
-  
-  h3 {
-    color: #007bff; /* blue color */
-    margin-bottom: 10px;
+  .insights {
+    padding: 10px;
   }
   
   .insightChoices {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    margin-top: 20px;
   }
   
   .insightChoices ul {
@@ -73,69 +78,96 @@
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
   
   .insightChoices li {
     cursor: pointer;
-    padding: 10px;
-    border-bottom: 2px solid transparent;
+    padding: 5px 17px;
+    background-color: #fff7cc;
+    border: 1px solid #ffdd00;
+    font-size: 14px;
+    border-radius: 30px;
     transition: border-color 0.2s ease-in-out;
   }
   
   .insightChoices li:hover {
-    border-bottom: 2px solid #007bff; /* blue color on hover */
-  }
-  
-  .insightChoices li.active {
-    border-bottom: 2px solid #007bff; /* blue color on active */
+    background-color: #ffdd00
   }
   
   .insightCards {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
   }
   
   .insightCard {
-    margin: 20px;
-    width: 250px;
-    background-color: #fff; /* white background */
-    border: 1px solid #ddd; /* light gray border */
+    margin: 20px 10px;
+    width: 30%;
+    background-color: #f5f5f5;
+    border: 2px solid #fff7cc; 
     border-radius: 10px;
-    padding: 20px;
+    height: 230px;
     cursor: pointer;
     transition: box-shadow 0.2s ease-in-out;
   }
   
   .insightCard:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 3px #ffdd00;
   }
   
   .insightCard img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
+    width: 100%;
+    height: 70%;
+    border-radius: 10px;
     margin-bottom: 10px;
   }
   
   .insightCard p {
-    font-size: 16px;
-    color: #333; /* dark gray color */
-    margin-bottom: 20px;
+    font-size: 14px;
+    color: #333333cc;
+    font-weight: bold;
+    padding: 7px 30px;
+    text-align: center;
   }
-  .resources {
-    padding: 20px;
-    background-color: #f7f7f7; /* light gray background */
+ 
+  
+  .insightModal .modalContent {
+    position: relative;
   }
   
-  h3 {
-    color: #007bff; /* blue color */
-    margin-bottom: 10px;
+  .insightModal .closeButton {
+    background: #888;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .insightModal .slideContent {
+    min-height: 100px;
+    color: #333;
+    text-align: center;
+  }
+
+
+  /* Resources */
+  .resources {
+    padding: 10px;
+    margin-top: 20px;
   }
   
   .resourceChoices {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    margin-top: 20px;
   }
   
   .resourceChoices ul {
@@ -143,96 +175,95 @@
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
   
   .resourceChoices li {
     cursor: pointer;
-    padding: 10px;
-    border-bottom: 2px solid transparent;
+    padding: 5px 17px;
+    background-color: #fff7cc;
+    border: 1px solid #ffdd00;
+    font-size: 14px;
+    border-radius: 30px;
     transition: border-color 0.2s ease-in-out;
   }
   
   .resourceChoices li:hover {
-    border-bottom: 2px solid #007bff; /* blue color on hover */
-  }
-  
-  .resourceChoices li.active {
-    border-bottom: 2px solid #007bff; /* blue color on active */
+    background-color: #ffdd00
   }
   
   .resourceCards {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
   }
   
   .resourceCard {
-    margin: 20px;
-    width: 250px;
-    background-color: #fff; /* white background */
-    border: 1px solid #ddd; /* light gray border */
+    margin: 20px 10px;
+    width: 30%;
+    background-color: #f5f5f5;
+    border: 2px solid #fff7cc; 
     border-radius: 10px;
-    padding: 20px;
+    height: 250px;
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 40px;
     transition: box-shadow 0.2s ease-in-out;
   }
   
   .resourceCard:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 3px #ffdd00;
   }
   
   .resourceCard img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
+    width: 100%;
+    height: 60%;
+    border-radius: 10px;
     margin-bottom: 10px;
   }
   
-  .resourceCard p {
+  .resourceCard p{
     font-size: 16px;
-    color: #333; /* dark gray color */
+    color: #333;
     margin-bottom: 20px;
+    margin: 10px;
+    text-align: center;
+    font-weight: 500;
   }
-  
-  .resourceCard span {
-    font-size: 14px;
-    color: #007bff; /* blue color */
-    cursor: pointer;
-  }
-  
-  .resourceCard span:hover {
+  .resourceCard span{
+    text-align: center;
+    color: #000;
+    font-weight: bold;
+    margin: 5px 40px;
     text-decoration: underline;
   }
-  .stories {
-    padding: 20px;
-    background-color: #f7f7f7; /* light gray background */
+  /* Stories */
+  .stories{
+    margin-top: 20px;
   }
-  
-  h3 {
-    color: #007bff; /* blue color */
-    margin-bottom: 10px;
-  }
-  
   .storyCards {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
+    margin: 50px 10px;
   }
   
   .storyCard {
-    margin: 20px;
-    width: 250px;
-    background-color: #fff; /* white background */
-    border: 1px solid #ddd; /* light gray border */
+    margin: 20px 10px;
+    width: 30%;
+    background-color: #f5f5f5;
+    /* border: 2px solid #fff7cc;  */
     border-radius: 10px;
-    padding: 20px;
+    height: 250px;
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
     transition: box-shadow 0.2s ease-in-out;
   }
   
   .storyCard:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 3px #ffdd00;
   }
   
   .storyCard img {
@@ -240,20 +271,21 @@
     height: 100px;
     border-radius: 50%;
     margin-bottom: 10px;
+    margin: -50px auto 10px auto;
   }
   
-  .storyCard p {
-    font-size: 16px;
-    color: #333; /* dark gray color */
+  .storyCard p{
+    font-size: 15px;
+    color: #333;
     margin-bottom: 20px;
+    margin: 10px;
+    text-align: center;
+    font-weight: 500;
   }
-  
-  .storyCard span {
-    font-size: 14px;
-    color: #007bff; /* blue color */
-    cursor: pointer;
-  }
-  
-  .storyCard span:hover {
+  .storyCard span{
+    text-align: center;
+    color: #000;
+    font-weight: bold;
+    margin: 5px 40px;
     text-decoration: underline;
   }

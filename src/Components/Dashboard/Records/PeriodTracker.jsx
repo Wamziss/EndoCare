@@ -11,14 +11,15 @@ function PeriodTracker() {
     setValue(nextValue);
   };
   return (
-    <div>
-      <h3>My Period Calendar</h3>
+    <div className='periodTracker'>
+      <h3 className='subHeader'>My Period Calendar</h3>
       <div className="calendarCard">
-        <p>14 Days Left</p>
-        <div>
+        <p>Days left to next period: <span><b>14 days</b></span></p>
+        <div className='myCalendar'>
           <Calendar
             onChange={onChange}
             value={value}
+            
           />
         </div>
       </div>

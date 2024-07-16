@@ -1,24 +1,19 @@
 import React from 'react';
-import Navigation from './Navigation';
 import Sidebar from './Sidebar';
-import Forum from './Community/Forum';
-import Hospitals from './Community/Hospitals';
+import Navigation from './Navigation';
 
-import './Styles.css'
-
-function Community() {
+function Settings() {
   return (
     <div>
       <Navigation/>
       <div className="contentArea">
         <Sidebar/>
         <div className="mainContent">
-          <Forum/>
-          <Hospitals/>
+          <p>Settings</p>
         </div>
       </div>
     </div>
   );
 }
 
-export default Community;
+export default Settings;

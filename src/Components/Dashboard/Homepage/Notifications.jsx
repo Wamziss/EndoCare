@@ -5,7 +5,7 @@ import './Styles.css'
 function Notifications() {
   return (
     <div className='notificationsCard'>
-      <h3>Notifications</h3>
+      <h3 className='notifHeader'>Notifications</h3>
             <ul className="notificationsList">
               <li>
                 <div className="notifIcon">

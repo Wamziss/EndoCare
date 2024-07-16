@@ -1,5 +1,6 @@
 *{
   font-family: Open Sans, sans-serif;
+  box-sizing: border-box;
 }
   .MainContainer {
     background-color: #fff;
@@ -14,10 +15,11 @@
   align-items: center;
   padding: 10px 30px;
   background-color: #fff; /* light gray background */
-  border-bottom: 1px solid #f5f5f5; /* light gray border */
+  /* border-bottom: 1px solid #fff7cc;  */
   position: relative;
   width: 100%;
   height: 12vh;
+  box-shadow: 0px 0 3px lightgray;
 }
 
 
@@ -31,8 +33,9 @@
 .logo {
   font-size: 26px;
   font-weight: bold;
-  color: #007bff; /* blue color */
+  color: #ffdd00;
   margin-right: 20px;
+  text-shadow: 1px 1px #333;
 }
 
 .menuBar {
@@ -41,10 +44,11 @@
 
 .menuBar svg {
   transition: fill 0.2s ease-in-out;
+  color: #333;
 }
 
 .menuBar:hover svg {
-  fill: #007bff; /* blue color on hover */
+  fill: #000;
 }
 
 .middleNav {
@@ -65,13 +69,13 @@
   padding: 5px 20px;
   border-radius: 20px;
   font-size: 16px;
-  border: 1px solid gray;
+  border: 0.2px solid lightgray;
 }
 
 .searchIcon {
   margin-left: 10px;
   cursor: pointer;
-  color: gray;
+  color: #333;
   margin-left: -30px;
 }
 
@@ -80,7 +84,7 @@
 }
 
 .searchIcon:hover svg {
-  fill: #007bff; /* blue color on hover */
+  color: #ffdd00; 
 }
 
 .rightNav {
@@ -92,11 +96,12 @@
 }
 
 .rightNav img {
-  width: 40px;
-  height: 40px;
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
   margin-right: 10px;
-  border: 2px solid #007bff;
+  border: 1px solid #ffdd00;
+  box-shadow: 2px 2px 10px #ffdd00a4;
 }
 
 .username {
@@ -137,17 +142,99 @@
 /* Sidebar */
 .sidebar {
   background-color: '#fff';
-  border-right: 1px solid #f5f5f5;
+  /* border-right: 1px solid #fff7cc; */
   position: relative;
-  width: 20%;
-  height: 100%;
+  min-width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px 10px;
+  align-items: center;
+  box-shadow: 0 0 3px lightgray;
+}
+.menuItems{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+.menuItems span{
+  font-weight: bold;
+  font-size: 17px;
+  text-align: center;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+
+ul li .menuLink{
+  color: #000;
+  font-weight: 500;
+  font-size: 16px;
+  padding-left: 15px;
+  flex: 1;
+}
+ul .menuItem{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 10px 20px;
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+ul .menuActive{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 10px 20px;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  background-color: #ffdd00;
+  border-radius: 15px;
+  box-shadow: 1px 1px 3px #f5f5f5;
+}
+ul .menuItem:hover{
+  background-color: #fff7cc;
+  border-radius: 15px;
+  box-shadow: 1px 1px 3px #ffdd00;
+}
+.bottomMenu{
+  width: 90%;
 }
 .mainContent{
   background-color: #fff;
-  overflow-y: scroll;
+  overflow-y: hidden;
   display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.leftContent{
+  flex: 1;
+  overflow-y: scroll;
+  background-color: '#fff';
+  padding: 5px 30px;
 }
 .rightContent{
-  width: 20%;
-  border: 1px solid;
+  min-width: 30%; 
+  max-width: 30%;
+  padding: 20px;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 3px; 
+}
+
+::-webkit-scrollbar-track {
+  background: #f5f5f5; 
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: lightgray; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ffdd00; 
 }
