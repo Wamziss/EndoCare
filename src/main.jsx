@@ -1,12 +1,8 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
+
+
 import React from 'react'
-import ReactDOM from 'react-dom/client'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-
-import './index.css'
-
-
 import App from './App.jsx'
+import './index.css'
 import Home from './Components/Dashboard/Home.jsx'
 import Records from './Components/Dashboard/Records.jsx';
 import Health from './Components/Dashboard/Health.jsx';
@@ -45,8 +41,3 @@ const router = createBrowserRouter([
   }
 ])
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <RouterProvider router={router} />
-  </React.StrictMode>
-)

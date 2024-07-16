@@ -9,6 +9,14 @@ import Services from '../pages/Services'
 import Contact from '../pages/Contact'
 import Donations from '../pages/Donations'
 
+// Dashboard
+import Dashboard from '../Components/Dashboard/Home'
+import App from '../App'
+import Records from '../Components/Dashboard/Records'
+import Health from '../Components/Dashboard/Health'
+import Community from '../Components/Dashboard/Community'
+import Saved from '../Components/Dashboard/Saved'
+
 const Routers = () => {
   return (
     <Routes>
@@ -20,6 +28,14 @@ const Routers = () => {
       <Route path='/contact' element={<Contact/>}/>
       <Route path='/services' element={<Services/>}/>
       <Route path='/donations' element={<Donations/>}/>
+      
+      {/* Dashboard Routes */}
+      <Route path='/home' element={<Dashboard/>}/>
+      <Route path='/records' element={<Records/>}/>
+      <Route path='/health' element={<Health/>}/>
+      <Route path='/community' element={<Community/>}/>
+      <Route path='/saved' element={<Saved/>}/>
+      
     </Routes>
   )
 }
