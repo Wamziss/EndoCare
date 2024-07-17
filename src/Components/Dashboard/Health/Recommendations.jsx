@@ -12,6 +12,7 @@ const Recommendations = () => {
     padding: '20px',
     backgroundColor: '#f8f9fa',
     gridTemplateColumns: '1fr 1fr 1fr', 
+    height: '250vh',
     width: '1050px' // Ensure the content takes up at least the full height of the viewport
   };
 

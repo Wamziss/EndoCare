@@ -11,6 +11,7 @@ function Navigation() {
       padding: '10px 20px',
       backgroundColor: '#f8f8f8',
       boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
+      
     },
     leftNav: {
       display: 'flex',

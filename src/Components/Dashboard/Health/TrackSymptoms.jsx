@@ -3,13 +3,14 @@ import React from 'react';
 function TrackSymptoms() {
   const containerStyle = {
     padding: '20px',
-    backgroundColor: '#f8f9fa',
+    backgroundColor: '#fff',
     borderRadius: '8px',
     boxShadow: '0 0px 0px rgba(0, 0, 0, 0.1)',
     textAlign: 'center',
     marginBottom: '20px',
     fontFamily: 'DM Sans',
-    width: '300px'
+    width: '300px',
+    height: '250vh'
   };
 
   const headingStyle = {
@@ -27,7 +28,7 @@ function TrackSymptoms() {
   const buttonStyle = {
     display: 'inline-block',
     padding: '10px 20px',
-    backgroundColor: '#007bff',
+    backgroundColor: '#215759',
     color: '#fff',
     borderRadius: '4px',
     cursor: 'pointer',

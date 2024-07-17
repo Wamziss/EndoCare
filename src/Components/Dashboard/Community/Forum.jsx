@@ -6,7 +6,7 @@ const Forum = () => {
     flexDirection: 'column',
     alignItems: 'center',
     padding: '20px',
-    backgroundColor: '#f2f2f2'
+    backgroundColor: '#fff'
   };
 
   const forumCardStyle = {
@@ -17,7 +17,7 @@ const Forum = () => {
     padding: '20px',
     borderRadius: '8px',
     boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
-    backgroundColor: '#f5f5dc',
+    backgroundColor: '#fff7cc',
     width: '100%',
     maxWidth: '600px'
   };
