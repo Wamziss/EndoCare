@@ -1,9 +1,10 @@
 import React from 'react';
 import image from '../../../assets/jogging.png';
 
+import "./Styles.css"
 function GeneralExercises() {
   const containerStyle = {
-    padding: '20px',
+    padding: '15px',
     backgroundColor: '#f8f9fa',
     borderRadius: '8px',
     boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',

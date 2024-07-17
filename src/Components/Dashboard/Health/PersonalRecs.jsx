@@ -2,6 +2,7 @@ import React from 'react';
 import fruits from '../../../assets/fruits.jpg';
 import image from '../../../assets/jogging.png';
 
+import "./Styles.css"
 function PersonalRecs() {
   const containerStyle = {
     padding: '20px',

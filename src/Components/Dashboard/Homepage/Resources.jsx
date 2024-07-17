@@ -8,10 +8,10 @@ function Resources() {
   return (
     <div>
       <div className="resources">
-        <h3>Resources</h3>
+        <h3 className='subHeader'>Resources</h3>
         <div className="resourceChoices">
           <ul>
-            <li>All</li>
+            <li style={{backgroundColor: '#ffdd00'}}><b>All</b></li>
             <li>Recommended</li>
             <li>Books</li>
             <li>Blogs</li>
@@ -22,20 +22,21 @@ function Resources() {
           <div className="resourceCard">
             <img src={image} alt="" />
             <p>Small description about this resourc..</p>
-            <span>View →</span>
+            <span>View</span>
           </div>
           <div className="resourceCard">
             <img src={image} alt="" />
             <p>Small description about this resourc..</p>
-            <span>View →</span>
+            <span>View</span>
           </div>
           <div className="resourceCard">
             <img src={image} alt="" />
             <p>Small description about this resourc..</p>
-            <span>View →</span>
+            <span>View</span>
           </div>
         </div>
       </div>
+      <hr/>
     </div>
   );
 }

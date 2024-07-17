@@ -5,13 +5,15 @@ import TrackSymptoms from './Health/TrackSymptoms';
 import GeneralExercises from './Health/GeneralExercises';
 import PersonalRecs from './Health/PersonalRecs';
 
+import './Styles.css'
+
 function Health() {
   return (
     <div>
       <Navigation/>
-      <div className="mainContent">
+      <div className="contentArea">
         <Sidebar/>
-        <div className="mainArea">
+        <div className="mainContent">
           <TrackSymptoms/>
           <GeneralExercises/>
           <PersonalRecs/>
