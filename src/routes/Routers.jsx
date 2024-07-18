@@ -11,7 +11,6 @@ import Donations from '../pages/Donations'
 
 // Dashboard
 import Dashboard from '../Components/Dashboard/Home'
-import App from '../App'
 import Records from '../Components/Dashboard/Records'
 import Health from '../Components/Dashboard/Health'
 import Community from '../Components/Dashboard/Community'

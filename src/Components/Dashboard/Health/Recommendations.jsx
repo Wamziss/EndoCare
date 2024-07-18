@@ -2,6 +2,7 @@ import React from 'react';
 import GeneralExercises from './GeneralExercises';
 import PersonalRecs from './PersonalRecs';
 import TrackSymptoms from './TrackSymptoms';
+import "./Styles.css"
 
 const Recommendations = () => {
   const containerStyle = {

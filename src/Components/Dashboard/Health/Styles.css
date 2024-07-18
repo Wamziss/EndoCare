@@ -1,0 +1,82 @@
+/* Sidebar */
+.sidebar {
+    background-color: #fff;
+    padding: 20px;
+}
+.sidebar .menu-item {
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.sidebar .menu-item:hover, .sidebar .menu-item.active {
+    background-color: #ffeb3b;
+    color: #000;
+}
+
+/* Track Symptoms */
+.track-symptoms {
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+}
+
+/* General Exercises */
+.general-exercises {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.general-exercises .exercise-item {
+    flex: 1 1 calc(33% - 30px);
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Personal Recommendations */
+.personal-recommendations {
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+}
+.personal-recommendations .recommendation-item {
+    display: flex;
+    margin-bottom: 20px;
+    gap: 15px;
+}
+.personal-recommendations .recommendation-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.personal-recommendations .recommendation-item .description {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.search-bar input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+}
+.search-bar button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #ffc107;
+    color: #fff;
+    border-radius: 8px;
+    margin-left: 10px;
+    cursor: pointer;
+}
