@@ -11,9 +11,9 @@ const Header = () => {
           <img src={logo} alt="EndoCare Logo" className="h-20" />
           <nav className="hidden md:flex space-x-4 ml-10">
             <a href="/" className="text-green hover:text-primaryColor">Home</a>
-            <a href="/about" className="text-green hover:text-primaryColor">About</a>
-            <a href="/services" className="text-green hover:text-primaryColor">Services</a>
-            <a href="/contact" className="text-green hover:text-primaryColor">Contact</a>
+            <a href="/#services" className="text-green hover:text-primaryColor">Services</a>
+            <a href="/#blog" className="text-green hover:text-primaryColor">Blogs</a>
+            <a href="/#contact-us" className="text-green hover:text-primaryColor">Contact</a>
           </nav>
         </div>
         <div className="flex items-center space-x-4">
