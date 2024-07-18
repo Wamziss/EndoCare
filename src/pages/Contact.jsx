@@ -7,15 +7,15 @@ const Contact = () => {
     message: '',
   });
 
-  const handleChange = e => {
+  const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData(prevState => ({
+    setFormData((prevState) => ({
       ...prevState,
       [name]: value,
     }));
   };
 
-  const handleSubmit = e => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     console.log(formData); // For demonstration purposes
     alert('Form submitted successfully!');
@@ -26,124 +26,86 @@ const Contact = () => {
     });
   };
 
-  const styles = {
-    section: {
-      backgroundColor: '#f7f7f7',
-      padding: '5rem 0',
-    },
-    container: {
-      margin: '0 auto',
-      padding: '0 1rem',
-      textAlign: 'center',
-    },
-    heading: {
-      fontSize: '2.25rem',
-      fontWeight: 'bold',
-      color: '#2d3748',
-      marginBottom: '3rem',
-      fontFamily: 'El Messiri',
-    },
-    form: {
-      maxWidth: '30rem',
-      margin: '0 auto',
-    },
-    formGroup: {
-      marginBottom: '1.5rem',
-    },
-    label: {
-      display: 'block',
-      color: '#4a5568',
-      fontWeight: '600',
-      marginBottom: '0.5rem',
-      fontFamily: 'DM Sans',
-    },
-    input: {
-      width: '100%',
-      padding: '0.5rem 1rem',
-      border: '1px solid #e2e8f0',
-      borderRadius: '0.375rem',
-      outline: 'none',
-      transition: 'border-color 0.2s',
-    },
-    textarea: {
-      width: '100%',
-      padding: '0.5rem 1rem',
-      border: '1px solid #e2e8f0',
-      borderRadius: '0.375rem',
-      outline: 'none',
-      transition: 'border-color 0.2s',
-      resize: 'vertical',
-    },
-    button: {
-      backgroundColor: '#38a169',
-      color: 'white',
-      padding: '0.75rem 1.5rem',
-      borderRadius: '0.375rem',
-      cursor: 'pointer',
-      transition: 'background-color 0.2s',
-      fontFamily: 'Roboto',
-    },
-    buttonHover: {
-      backgroundColor: '#2f855a',
-    },
-  };
-
   return (
-    <section id="contact-us" style={styles.section}>
-      <div style={styles.container}>
-        <h2 style={styles.heading}>Contact Us</h2>
-        <form onSubmit={handleSubmit} style={styles.form}>
-          <div style={styles.formGroup}>
-            <label htmlFor="name" style={styles.label}>Name</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              value={formData.name}
-              onChange={handleChange}
-              placeholder="Enter your name"
-              style={styles.input}
-              required
-            />
+    <section id="contact-us" className="bg-softGray py-12">
+      <div className="container mx-auto px-4 text-center">
+        <h2 className="text-2xl md:text-3xl font-bold text-primaryColor mb-8">Contact Us</h2>
+        <p className="text-md text-gray-700 mb-4 md:mb-6">
+          We'd love to hear from you! Whether you have a question about our services, need assistance, or just want to provide feedback, feel free to reach out.
+        </p>
+        <div className="md:flex md:justify-around">
+          <form onSubmit={handleSubmit} className="bg-white rounded-lg shadow-md p-6 md:p-8 mb-6 md:mb-0 md:w-1/2 lg:w-1/3">
+            <div className="mb-4">
+              <label htmlFor="name" className="block text-left text-green font-semibold mb-2">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
+                placeholder="Enter your name"
+                className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:border-primaryColor"
+                required
+              />
+            </div>
+            <div className="mb-4">
+              <label htmlFor="email" className="block text-left text-green font-semibold mb-2">Email Address</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                placeholder="Enter your email address"
+                className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:border-primaryColor"
+                required
+              />
+            </div>
+            <div className="mb-4">
+              <label htmlFor="message" className="block text-left text-green font-semibold mb-2">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                value={formData.message}
+                onChange={handleChange}
+                placeholder="Enter your message"
+                rows={4}
+                className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:border-primaryColor resize-vertical"
+                required
+              />
+            </div>
+            <button
+              type="submit"
+              className="bg-green text-white py-2 px-4 rounded-md hover:bg-primaryColor transition duration-200"
+            >
+              Submit
+            </button>
+          </form>
+          <div className="md:w-1/2 lg:w-1/3 md:flex md:flex-col md:justify-center md:pl-4">
+            <div className="text-left mb-6">
+              <h3 className="text-xl font-semibold text-primaryColor mb-2">Contact Information</h3>
+              <p className="text-gray-700">Email: support@endocare.com</p>
+              <p className="text-gray-700">Phone: +1 123 456 7890</p>
+              <p className="text-gray-700">Address: 123 Health St, Wellness City, CA</p>
+            </div>
+            <div className="text-left">
+              <h3 className="text-xl font-semibold text-primaryColor mb-2">Find Us Here</h3>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0197986536794!2d-122.41941548468133!3d37.77492917975859!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808b93e6d2cb%3A0x25f4d7c0f7e8972a!2s123%20Health%20St%2C%20Wellness%20City%2C%20CA!5e0!3m2!1sen!2sus!4v1624031619824!5m2!1sen!2sus"
+                width="100%"
+                height="150"
+                allowFullScreen=""
+                loading="lazy"
+                className="rounded-md shadow-md"
+              ></iframe>
+            </div>
           </div>
-          <div style={styles.formGroup}>
-            <label htmlFor="email" style={styles.label}>Email Address</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              value={formData.email}
-              onChange={handleChange}
-              placeholder="Enter your email address"
-              style={styles.input}
-              required
-            />
-          </div>
-          <div style={styles.formGroup}>
-            <label htmlFor="message" style={styles.label}>Message</label>
-            <textarea
-              id="message"
-              name="message"
-              value={formData.message}
-              onChange={handleChange}
-              placeholder="Enter your message"
-              rows={6}
-              style={styles.textarea}
-              required
-            />
-          </div>
-          <button
-            type="submit"
-            style={styles.button}
-            onMouseEnter={e => (e.target.style.backgroundColor = styles.buttonHover.backgroundColor)}
-            onMouseLeave={e => (e.target.style.backgroundColor = styles.button.backgroundColor)}
-          >
-            Submit
-          </button>
-        </form>
+        </div>
       </div>
     </section>
   );
 };
 
 export default Contact;
+
+

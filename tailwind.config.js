@@ -9,7 +9,7 @@ export default {
       colors: {
         primaryColor: '#cea608',
         // primaryColor: '#FFD700',
-        lightYellow: '#FFFACD',
+        lightYellow: '#FFF7cc',
         white: '#FFFFFF',
         softGray: '#F5F5F5',
         lightGray: '#D3D3D3',
