@@ -111,7 +111,7 @@ import Home from './Components/Dashboard/Home.jsx'
 import Records from './Components/Dashboard/Records.jsx'
 import Health from './Components/Dashboard/Health.jsx'
 import Community from './Components/Dashboard/Community.jsx'
-import Saved from './Components/Dashboard/Saved.jsx'
+import Saved from './Components/Dashboard/Saved/Saved.jsx'
 import Settings from './Components/Dashboard/Settings.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
