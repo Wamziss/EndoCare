@@ -51,7 +51,7 @@ function Navigation() {
     searchInput: {
       width: '100%',
       padding: '8px 12px',
-      borderRadius: '4px',
+      borderRadius: '30px',
       border: '1px solid #ccc',
     },
     searchIcon: {
