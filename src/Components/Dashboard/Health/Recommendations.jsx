@@ -3,6 +3,7 @@ import GeneralExercises from './GeneralExercises';
 import PersonalRecs from './PersonalRecs';
 import TrackSymptoms from './TrackSymptoms';
 import "./Styles.css"
+import { BorderColor } from '@mui/icons-material';
 
 const Recommendations = () => {
   const containerStyle = {
@@ -13,7 +14,8 @@ const Recommendations = () => {
     backgroundColor: '#f8f9fa',
     gridTemplateColumns: '1fr 1fr 1fr', 
     height: '250vh',
-    width: '1050px' // Ensure the content takes up at least the full height of the viewport
+    width: '1050px',
+    BorderColor: 'red' // Ensure the content takes up at least the full height of the viewport
   };
 
   const sectionStyle = {

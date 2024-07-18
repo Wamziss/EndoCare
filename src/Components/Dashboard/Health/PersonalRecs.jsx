@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import fruits from '../../../assets/fruits.jpg';
 import image from '../../../assets/jogging.png';
 
 import "./Styles.css"
+
 function PersonalRecs() {
+  const [selectedCategory, setSelectedCategory] = useState('diet');
+
   const containerStyle = {
     padding: '20px',
     backgroundColor: '#fff',
@@ -11,36 +14,49 @@ function PersonalRecs() {
     boxShadow: '0 0px 0px rgba(0, 0, 0, 0.1)',
     textAlign: 'center',
     marginBottom: '20px',
-    width: '450px',
-    height: '250hv'
+    width: '100%',
+    maxWidth: '900px',
+    margin: '0 auto',
   };
 
   const headingStyle = {
-    fontFamily: 'El Messiri',
-    fontSize: '24px',
-    marginBottom: '20px'
+    fontSize: '32px',
+    fontWeight: 'bold',
+    marginBottom: '20px',
+    color: '#215759'
   };
 
   const listStyle = {
     display: 'flex',
-    justifyContent: 'space-around',
+    justifyContent: 'center',
     listStyleType: 'none',
-    padding: '0'
+    padding: '0',
+    marginBottom: '20px'
   };
 
   const listItemStyle = {
     cursor: 'pointer',
-    padding: '10px',
+    padding: '10px 20px',
     borderRadius: '4px',
-    margin: '5px',
-    fontFamily: 'DM Sans',
-    fontSize: '16px'
+    margin: '0 10px',
+    fontSize: '18px',
+    color: '#215759',
+    transition: 'background-color 0.3s, color 0.3s'
+  };
+
+  const activeListItemStyle = {
+    ...listItemStyle,
+    backgroundColor: '#ffdd00',
+    color: '#215759',
   };
 
   const cardContainerStyle = {
     display: 'flex',
     justifyContent: 'space-around',
-    flexWrap: 'wrap'
+    flexWrap: 'wrap',
+    width: '100%',
+    margin: '20px',
+    padding: '20px'
   };
 
   const cardStyle = {
@@ -49,21 +65,26 @@ function PersonalRecs() {
     borderRadius: '8px',
     boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
     textAlign: 'center',
-    marginBottom: '20px',
-    width: '250px',
-    fontFamily: 'DM Sans'
+    margin: '10px',
+    width: '25%',
+    flex: '1 1 250px',
+    maxWidth: '100%',
+    transition: 'transform 0.3s ease-in-out',
+    '&:hover': {
+      transform: 'scale(1.05)'
+    }
   };
 
   const buttonStyle = {
     display: 'inline-block',
-    padding: '10px 20px',
+    padding: '12px 24px',
     backgroundColor: '#215759',
     color: '#fff',
     borderRadius: '4px',
     cursor: 'pointer',
-    textDecoration: 'none',
-    fontFamily: 'Roboto',
-    fontSize: '14px'
+    fontSize: '16px',
+    marginTop: '20px',
+    transition: 'background-color 0.3s'
   };
 
   const imageStyle = {
@@ -71,21 +92,30 @@ function PersonalRecs() {
     marginBottom: '10px'
   };
 
+  const handleCategoryClick = (category) => {
+    setSelectedCategory(category);
+  };
+
   return (
     <div style={containerStyle}>
       <h3 style={headingStyle}>Personal Recommendations</h3>
       <div className="recsChoices">
         <ul style={listStyle}>
-          <li style={listItemStyle}>Diet</li>
-          
+          <li
+            style={selectedCategory === 'diet' ? activeListItemStyle : listItemStyle}
+            onClick={() => handleCategoryClick('diet')}
+          >
+            Diet
+          </li>
+          <li
+            style={selectedCategory === 'exercises' ? activeListItemStyle : listItemStyle}
+            onClick={() => handleCategoryClick('exercises')}
+          >
+            Exercises
+          </li>
         </ul>
       </div>
-      <div className="diet">
-        <div style={cardStyle}>
-          <img src={fruits} alt="" style={imageStyle} />
-          <p>Small description Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-          <button type="button" style={buttonStyle}>Read</button>
-        </div>
+      <div className={selectedCategory === 'diet' ? 'diet' : 'exercises'} style={cardContainerStyle}>
         <div style={cardStyle}>
           <img src={fruits} alt="" style={imageStyle} />
           <p>Small description Lorem ipsum dolor sit amet consectetur adipisicing.</p>
@@ -102,18 +132,8 @@ function PersonalRecs() {
           <button type="button" style={buttonStyle}>Read</button>
         </div>
       </div>
-      <li style={listItemStyle}>Exercises</li>
-      <div className="exercises">
-        <div style={cardStyle}>
-          <img src={image} alt="" style={imageStyle} />
-          <span>Backpain relief - 5 minutes</span>
-          <button type="button" style={buttonStyle}>Start</button>
-        </div>
-        <div style={cardStyle}>
-          <img src={image} alt="" style={imageStyle} />
-          <span>Backpain relief - 5 minutes</span>
-          <button type="button" style={buttonStyle}>Start</button>
-        </div>
+      
+      <div className={selectedCategory === 'exercises' ? 'exercises' : 'diet'} style={cardContainerStyle}>
         <div style={cardStyle}>
           <img src={image} alt="" style={imageStyle} />
           <span>Backpain relief - 5 minutes</span>
@@ -135,3 +155,4 @@ function PersonalRecs() {
 }
 
 export default PersonalRecs;
+
