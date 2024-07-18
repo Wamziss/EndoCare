@@ -19,7 +19,8 @@ function TrackSymptoms() {
     backgroundColor: '#fff7cc',
     width: '80%',
     borderRadius: '20px',
-    boxShadow: '0 0 3px lightgray'
+    boxShadow: '0 0 3px lightgray',
+    border: '1px solid #215759'
   };
 
   const headingStyle = {

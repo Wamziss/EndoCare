@@ -15,6 +15,9 @@ function Health() {
       flexDirection: 'column',
       width: '100%',
       overflowY: 'scroll',
+    },
+    bottomHealthContent: {
+      padding: '20px 30px',
     }
   }
   return (
@@ -24,8 +27,10 @@ function Health() {
         <Sidebar/>
         <div className="healthContent" style={styles.healthContent}>
           <TrackSymptoms/>
-          <GeneralExercises/>
-          <PersonalRecs/>
+          <div className='bottomHealthContent' style={styles.bottomHealthContent}>
+            <GeneralExercises/>
+            <PersonalRecs/>
+          </div>
         </div>
       </div>
     </div>

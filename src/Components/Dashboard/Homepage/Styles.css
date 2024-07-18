@@ -90,14 +90,14 @@
     cursor: pointer;
     padding: 5px 17px;
     background-color: #fff7cc;
-    border: 1px solid #ffdd00;
+    border: 1px solid #215759;
     font-size: 14px;
     border-radius: 30px;
     transition: border-color 0.2s ease-in-out;
   }
   
   .insightChoices li:hover {
-    background-color: #ffdd00
+    background-color: #215759
   }
   
   .insightCards {
@@ -194,7 +194,7 @@
   }
   
   .resourceChoices li:hover {
-    background-color: #ffdd00
+    background-color: #215759
   }
   
   .resourceCards {
@@ -294,7 +294,6 @@
     margin: 5px 40px;
     text-decoration: underline;
   }
-=======
 .notificationsCard {
   padding: 15px;
   background-color: #fff7cc; 

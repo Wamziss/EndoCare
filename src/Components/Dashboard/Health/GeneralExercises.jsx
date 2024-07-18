@@ -3,38 +3,41 @@ import image from '../../../assets/jogging.png';
 
 function GeneralExercises() {
   const containerStyle = {
-    padding: '20px',
+    padding: '0 20px',
     backgroundColor: '#fff',
     borderRadius: '8px',
-    textAlign: 'center',
     marginBottom: '20px',
     width: '100%',
-    maxWidth: '900px',
     margin: '0 auto',
+    display: 'flex',
+    flexDirection: 'column',
+
   };
 
   const headingStyle = {
     fontSize: '32px',
     fontWeight: 'bold',
     marginBottom: '20px',
-    color: '#215759'
+    color: '#215759',
   };
 
   const listStyle = {
     display: 'flex',
-    justifyContent: 'center',
+    justifyContent: 'space-around',
     listStyleType: 'none',
-    padding: '0',
-    marginBottom: '20px'
+    marginBottom: '20px',
+    width: 'fit-content',
   };
 
   const listItemStyle = {
     cursor: 'pointer',
-    padding: '10px 20px',
-    borderRadius: '4px',
-    margin: '0 10px',
-    fontSize: '18px',
+    padding: '5px 20px',
+    borderRadius: '30px',
+    margin: '0 15px',
+    fontSize: '17px',
     color: '#215759',
+    backgroundColor: '#fff7cc',
+    border: '1px solid #ffdd00',
     transition: 'background-color 0.3s, color 0.3s'
   };
 
@@ -47,38 +50,44 @@ function GeneralExercises() {
   const cardContainerStyle = {
     display: 'flex',
     justifyContent: 'space-around',
-    flexWrap: 'wrap'
+    flexWrap: 'wrap',
+    marginBottom: '40px'
   };
 
   const cardStyle = {
-    padding: '20px',
-    backgroundColor: '#ffffff',
+    paddingBottom: '20px',
+    backgroundColor: '#f5f5f5',
     borderRadius: '8px',
     textAlign: 'center',
     marginBottom: '20px',
-    width: '250px',
+    width: '30%',
     maxWidth: '100%',
     transition: 'transform 0.3s ease-in-out',
+    border: '1px solid lightgray',
+    height: '300px',
+    display: 'flex',
+    flexDirection: 'column',
     '&:hover': {
-      transform: 'scale(1.05)'
+      transform: 'scale(1.05)',
     }
   };
 
   const buttonStyle = {
     display: 'inline-block',
-    padding: '12px 24px',
+    padding: '7px 20px',
     backgroundColor: '#215759',
     color: '#fff',
-    borderRadius: '4px',
+    borderRadius: '10px',
     cursor: 'pointer',
-    fontSize: '16px',
-    marginTop: '20px',
+    fontSize: '14px',
+    marginTop: '10px',
     transition: 'background-color 0.3s'
   };
 
   const cardImageStyle = {
     width: '100%',
-    borderRadius: '8px'
+    borderRadius: '8px',
+    height: '70%',
   };
 
   return (
@@ -109,6 +118,7 @@ function GeneralExercises() {
           <button type="button" style={buttonStyle}>Start</button>
         </div>
       </div>
+      <hr/>
     </div>
   );
 }

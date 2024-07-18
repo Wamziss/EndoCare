@@ -12,7 +12,7 @@ function Community() {
       <Navigation/>
       <div className="contentArea">
         <Sidebar/>
-        <div className="mainContent">
+        <div className="mainContent" style={{width: '100%', height: '90vh'}}>
           <Forum/>
           <Hospitals/>
         </div>

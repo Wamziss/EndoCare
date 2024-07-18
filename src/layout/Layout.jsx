@@ -1,19 +1,19 @@
-import React from 'react'
+import React from "react";
 
-import Header from '../components/Header/Header'
-import Routers from '../routes/Routers'
-import Footer from '../components/Footer/Footer'
+import Header from "../Components/Header/Header";
+import Routers from "../routes/Routers";
+import Footer from "../Components/Footer/Footer";
 
 const Layout = () => {
   return (
     <>
-      <Header/>
-      <main className='flex-grow'>
+      <Header />
+      <main className="flex-grow">
         <Routers />
       </main>
-      <Footer/>
+      <Footer />
     </>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;
