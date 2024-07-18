@@ -7,11 +7,12 @@ function Resources() {
     flexDirection: 'column',
     alignItems: 'center',
     padding: '20px',
-    backgroundColor: '#f8f9fa',
+    backgroundColor: '#fff',
     borderRadius: '8px',
     fontFamily: 'DM Sans',
-    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
-    width:'400px'
+    boxShadow: '0 0px 0px rgba(0, 0, 0, 0.1)',
+    width:'300px',
+    height:'150hv'
   };
 
   const titleStyle = {
@@ -30,7 +31,7 @@ function Resources() {
   const cardStyle = {
     width: '200px',
     padding: '40px 40px',
-    backgroundColor: '#f5f5dc',
+    backgroundColor: '#fff7cc',
     borderRadius: '8px',
     boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
     textAlign: 'center',
@@ -46,7 +47,7 @@ function Resources() {
     display: 'inline-block',
     marginTop: '10px',
     padding: '8px 16px',
-    backgroundColor: '#007bff',
+    backgroundColor: '#215759',
     color: '#fff',
     borderRadius: '4px',
     cursor: 'pointer',

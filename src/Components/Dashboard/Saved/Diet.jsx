@@ -9,10 +9,11 @@ function Diet() {
     gap: '20px',
     justifyContent: 'center',
     padding: '20px',
-    backgroundColor: '#f8f9fa',
+    backgroundColor: '#fff',
     borderRadius: '8px',
     width:'300px',
-    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)'
+    boxShadow: '0 0px 0px rgba(0, 0, 0, 0.1)',
+    height: '200hv'
   };
 
   const titleStyle = {
@@ -34,7 +35,7 @@ function Diet() {
     padding: '30px',
     height: '250px',
     gap: '10px',
-    backgroundColor: '#f5f5dc',
+    backgroundColor: '#fff7cc',
     borderRadius: '8px',
     boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
     textAlign: 'center',
@@ -50,7 +51,7 @@ function Diet() {
     display: 'inline-block',
     marginTop: '10px',
     padding: '8px 16px',
-    backgroundColor: '#007bff',
+    backgroundColor: '#215759',
     color: '#fff',
     borderRadius: '4px',
     cursor: 'pointer',

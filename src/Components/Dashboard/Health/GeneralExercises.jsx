@@ -4,13 +4,14 @@ import image from '../../../assets/jogging.png';
 import "./Styles.css"
 function GeneralExercises() {
   const containerStyle = {
-    padding: '15px',
-    backgroundColor: '#f8f9fa',
+    padding: '20px',
+    backgroundColor: '#fff',
     borderRadius: '8px',
-    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+    boxShadow: '0 0px 0px rgba(0, 0, 0, 0.1)',
     textAlign: 'center',
     marginBottom: '20px',
-    width: '400px'
+    width: '400px',
+    height: '250vh'
   };
 
   const headingStyle = {
@@ -44,7 +45,7 @@ function GeneralExercises() {
 
   const cardStyle = {
     padding: '20px',
-    backgroundColor: '#f5f5dc',
+    backgroundColor: '#fff7cc',
     borderRadius: '8px',
     boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
     textAlign: 'center',
@@ -56,7 +57,7 @@ function GeneralExercises() {
   const buttonStyle = {
     display: 'inline-block',
     padding: '10px 20px',
-    backgroundColor: '#007bff',
+    backgroundColor: '#215759',
     color: '#fff',
     borderRadius: '4px',
     cursor: 'pointer',

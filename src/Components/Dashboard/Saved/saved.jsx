@@ -9,7 +9,8 @@ function Saved() {
     gridTemplateColumns: '1fr 1fr 1fr', // Three equal columns
     gap: '20px', // Adjust the gap between columns as needed
     padding: '20px',
-    width: '1100px'
+    width: '900px',
+    height: '100%'
   };
 
   const sectionStyle = {
