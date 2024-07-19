@@ -11,7 +11,7 @@ function Resources() {
         <h3 className='subHeader'>Resources</h3>
         <div className="resourceChoices">
           <ul>
-            <li style={{backgroundColor: '#ffdd00'}}><b>All</b></li>
+            <li style={{backgroundColor: '#215759', border: 'none', color: 'white'}}><b>All</b></li>
             <li>Recommended</li>
             <li>Books</li>
             <li>Blogs</li>

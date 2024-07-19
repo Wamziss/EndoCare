@@ -5,8 +5,10 @@ const Forum = () => {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
-    padding: '20px',
-    backgroundColor: '#fff'
+    padding: '10px',
+    backgroundColor: '#fff',
+    margin: 'auto',
+    height: '90%'
   };
 
   const forumCardStyle = {

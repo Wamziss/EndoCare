@@ -30,13 +30,7 @@
   justify-content: space-evenly;
 }
 
-.logo {
-  font-size: 26px;
-  font-weight: bold;
-  color: #ffdd00;
-  margin-right: 20px;
-  text-shadow: 1px 1px #333;
-}
+
 
 .menuBar {
   cursor: pointer;
@@ -191,12 +185,12 @@ ul .menuActive{
   box-sizing: border-box;
   background-color: #ffdd00;
   border-radius: 15px;
-  box-shadow: 1px 1px 3px #f5f5f5;
+  box-shadow: 1px 1px 3px #215759;
 }
 ul .menuItem:hover{
   background-color: #fff7cc;
   border-radius: 15px;
-  box-shadow: 1px 1px 3px #ffdd00;
+  box-shadow: 1px 1px 3px #215759;
 }
 .bottomMenu{
   width: 90%;

@@ -105,7 +105,7 @@ function Insights() {
         <h3 className='subHeader'>Insights</h3>
         <div className="insightChoices">
           <ul>
-            <li style={{backgroundColor: '#ffdd00'}}><b>All</b></li>
+            <li style={{backgroundColor: '#215759', border: 'none', color: 'white'}}><b>All</b></li>
             <li>Recommended</li>
             <li>Symptoms</li>
             <li>Food</li>
