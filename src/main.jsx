@@ -111,7 +111,7 @@ import Home from './Components/Dashboard/Home.jsx'
 import Records from './Components/Dashboard/Records.jsx'
 import Health from './Components/Dashboard/Health.jsx'
 import Community from './Components/Dashboard/Community.jsx'
-import Saved from './Components/Dashboard/Saved.jsx'
+// import Saved from './Components/Dashboard/Saved.jsx'
 import Settings from './Components/Dashboard/Settings.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -123,7 +123,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path="/records" element={<Records />} />
         <Route path="/health" element={<Health />} />
         <Route path="/community" element={<Community />} />
-        <Route path="/saved" element={<Saved />} />
+        {/* <Route path="/saved" element={<Saved />} /> */}
         <Route path="/settings" element={<Settings />} />
       </Routes>
     </BrowserRouter>
