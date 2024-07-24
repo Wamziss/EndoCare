@@ -33,9 +33,9 @@ function Home() {
         </div>
         {/* Main Content end */}
       </div>
-      {/* <div className="chatbot">
+      <div className="chatbot">
         <Chatbot />
-      </div> */}
+      </div>
     </div>
   );
 }

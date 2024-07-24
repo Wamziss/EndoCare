@@ -63,7 +63,7 @@ const SignUp = () => {
     },
     button: {
       width: '100%',
-      backgroundColor: '#38a169',
+      backgroundColor: '#215759',
       color: '#fff',
       padding: '0.5rem 0',
       borderRadius: '0.375rem',
@@ -80,7 +80,7 @@ const SignUp = () => {
       color: '#4a5568',
     },
     link: {
-      color: '#38a169',
+      color: 'blue',
       textDecoration: 'none',
       transition: 'text-decoration 0.2s',
     },

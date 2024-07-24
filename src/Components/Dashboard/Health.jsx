@@ -4,9 +4,9 @@ import Sidebar from './Sidebar';
 import TrackSymptoms from './Health/TrackSymptoms';
 import GeneralExercises from './Health/GeneralExercises';
 import PersonalRecs from './Health/PersonalRecs';
+import Chatbot from './Homepage/Chatbot';
 
 import './Styles.css'
-import { BorderAll } from '@mui/icons-material';
 
 function Health() {
   const styles = {
@@ -32,6 +32,9 @@ function Health() {
             <PersonalRecs/>
           </div>
         </div>
+      </div>
+      <div className="chatbot">
+        <Chatbot />
       </div>
     </div>
   );

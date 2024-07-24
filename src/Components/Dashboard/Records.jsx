@@ -4,6 +4,7 @@ import Sidebar from './Sidebar';
 import PeriodTracker from './Records/PeriodTracker';
 import Medication from './Records/Medication';
 import Appointments from './Records/Appointments';
+import Chatbot from './Homepage/Chatbot';
 
 import './Styles.css'
 
@@ -22,6 +23,9 @@ function Records() {
             <Appointments/>
           </div>
         </div>
+      </div>
+      <div className="chatbot">
+        <Chatbot />
       </div>
     </div>
   );

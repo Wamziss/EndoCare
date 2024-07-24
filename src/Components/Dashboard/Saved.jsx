@@ -4,6 +4,7 @@ import Exercises from "./Saved/Exercises";
 import Resources from "./Saved/Resources";
 import Navigation from "./Navigation";
 import Sidebar from "./Sidebar";
+import Chatbot from './Homepage/Chatbot';
 
 function Saved() {
   const mainContentStyle = {
@@ -23,6 +24,9 @@ function Saved() {
           <Exercises />
           <Resources />
         </div>
+      </div>
+      <div className="chatbot">
+        <Chatbot />
       </div>
     </div>
   );

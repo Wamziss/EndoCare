@@ -3,6 +3,7 @@ import Navigation from './Navigation';
 import Sidebar from './Sidebar';
 import Forum from './Community/Forum';
 import Hospitals from './Community/Hospitals';
+import Chatbot from './Homepage/Chatbot';
 
 import './Styles.css'
 
@@ -16,6 +17,9 @@ function Community() {
           <Forum/>
           <Hospitals/>
         </div>
+      </div>
+      <div className="chatbot">
+        <Chatbot />
       </div>
     </div>
   );
