@@ -1,13 +1,13 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
-import Home from '../pages/Home'
+import Home from '../Components/LandingPage/pages/Home'
 // import Blogs from '../pages/Blogs/Blogs'
-import BlogDetails from '../pages/Blogs/BlogDetails'
-import Login from '../pages/Login'
-import SignUp from '../pages/SignUp'
+import BlogDetails from '../Components/LandingPage/Blogs/BlogDetails'
+import Login from '../Components/LandingPage/pages/Login'
+import SignUp from '../Components/LandingPage/pages/SignUp'
 // import Services from '../pages/Services'
 // import Contact from '../pages/Contact'
-import Donations from '../pages/Donations'
+import Donations from '../Components/LandingPage/Donations'
 
 
 
