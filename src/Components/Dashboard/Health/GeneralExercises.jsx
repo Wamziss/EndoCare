@@ -81,7 +81,9 @@ function GeneralExercises() {
     cursor: 'pointer',
     fontSize: '14px',
     marginTop: '10px',
-    transition: 'background-color 0.3s'
+    transition: 'background-color 0.3s',
+    width: '40%',
+    alignSelf: 'center'
   };
 
   const cardImageStyle = {
